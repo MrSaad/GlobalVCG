@@ -4,7 +4,7 @@ block content
   
   //*** NAVIGATION ***
   header
-    nav.navbar.navbar-inverse.navbar-fixed-top(role='navigation')
+    nav.navbar.navbar-default.navbar-fixed-top(role='navigation')
       .container
         .navbar-header
           button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#collapse')
@@ -43,7 +43,7 @@ block content
         #particle-container.content.container
           #particles-js
         .content.container
-          h1 Specializing in
+          h1 We Specialize In
           .row
             #leftList.col-md-6
               ul
@@ -66,29 +66,23 @@ block content
         .row
           
           // Left side 
-          #contactInfo.col-sm-6
+          #contact-left-container.col-sm-6
             .row
-              #contactInfo-address.col-md-12
+              #address.col-md-12
                 h3 Iftekhar A. Ibrahim (President)
                 p 137 Streamview Dr.
                 p Troy. Michigan. 48085
                 p USA
-              #contactInfo-contact.col-md-12
-                i.fa.fa-phone
-                span
-                  | 1-248-818-8996 (US)
-                  br
-                span(style='padding-left: 36px;')
-                  | 86-15901652708 (China)
-                  br
-                i.fa.fa-envelope-o
-                span(style='padding-left: 10px;')
-                  a#emailAddress(href='saadem3000@gmail.com') iftekhar.ibrahim@gmail.com
+              #contact-links.col-md-12
+                p 1-248-818-8996 (US)
+                p 86-15901652708 (China)
+                p
+                  a#emailAddress(href='mailto:saadem3000@gmail.com') iftekhar.ibrahim@gmail.com
           
           // Right side
-          .col-sm-6
-            h2 Send a message
-            form#contactForm(role='form')
+          #contact-right-container.col-sm-6
+            h2 Send a Message
+            form#contact-form(role='form')
               .row-fluid
                 .form-group.col-sm-6
                   label.h4(for='name') Name
