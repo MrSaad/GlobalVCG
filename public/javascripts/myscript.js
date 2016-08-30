@@ -16,9 +16,8 @@ $(function(){
 		$('.particles-js-canvas-el').css('height', $('#about').height());
 	});
 
-	console.log(aspectRatio+": "+(1920.0/1280));
+	// fix aspect ratio of background image
 	if( aspectRatio < (1920.0/1280) ){
-		console.log(aspectRatio+": "+(1920.0/1280));
 		$("#main").css({"background-size": "auto 100%"});
 	}
 
@@ -44,6 +43,7 @@ $(function(){
 	    }
 	});
 
+	// arrow click
 	$('.fa-angle-down').click(function(){
 		$('html,body').animate({
 			scrollTop: $('#about').offset().top
@@ -65,8 +65,6 @@ $(function(){
 			} //target.length
 	    } //click function
 	}); //smooth scrolling)
-
-	
 
 	//add parallax to first div
 	// $('.bg-1').parallax({

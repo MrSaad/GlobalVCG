@@ -48,10 +48,14 @@ header .navbar {
   transition: all .5s ease-out;
 }
 
-header .navbar-inverse {
-  background-color: transparent;
-  border: none;
+header .navbar-default {
+  background-color: rgba(255, 255, 255, 0.8);
 }
+
+header .inbody{
+  background-color: rgba(255, 255, 255, 1);
+}
+
 
 header .navbar-brand{
   padding-top: 12px;
@@ -62,12 +66,12 @@ header .navbar-brand img{
 }
 
 header .navbar-default .navbar-nav a{
-  color: rgba(100, 100, 100, 1);
+  color: rgb(100, 100, 100);
 }
 
 header .navbar-default .navbar-nav .active a, header .navbar-default .navbar-nav .active a:focus,
 header .navbar-default .navbar-nav a:hover, header .navbar-default .navbar-nav .active a:hover{
-  color: rgba(212,175,55,1);
+  color: rgb(189, 130, 23);
 }
 
 .nav .active a { 
@@ -80,7 +84,6 @@ header .navbar .navbar-collapse{
 
 
 /**  Page **/
-
 .page h1 {
   margin-bottom: 50px;
 }
@@ -89,7 +92,7 @@ header .navbar .navbar-collapse{
 #main{
   /*background: url('../pics/car.jpg') no-repeat center top;*/
   /*background: url('../pics/car.jpg') no-repeat center top fixed;*/
-  background: url('../images/vehicles.jpg') no-repeat center top;
+  background: url('../images/vehicles-edit.jpg') no-repeat center top;
   /*background-size: auto 100%;*/
   background-size: 100% auto;
   position: relative;
@@ -106,7 +109,7 @@ header .navbar .navbar-collapse{
 
 #main #main-text-column{
   position: absolute;
-  top: 40%;
+  top: 30%;
 }
 
 #main #car-icon-column{
@@ -126,14 +129,12 @@ header .navbar .navbar-collapse{
 
 @media only screen 
 and (min-width: 768px){
-  #main #main-text-column{
-    top: 40%;
-  }
   #main #car-icon-column{
     top: 55%;
   }
   #main #main-text{
-    font-size: 1.7em;
+    font-size: 2em;
+    font-weight: 400;
   }
 }
 

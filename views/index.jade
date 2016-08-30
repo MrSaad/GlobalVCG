@@ -82,7 +82,7 @@ block content
           // Right side
           #contact-right-container.col-sm-6
             h2 Send a Message
-            form#contact-form(role='form')
+            form#contact-form(name='contact-form', role='form', method='post', action='/sendmessage' enctype='multipart/form-data')
               .row-fluid
                 .form-group.col-sm-6
                   label.h4(for='name') Name
