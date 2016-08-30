@@ -1,0 +1,119 @@
+extends layout
+
+block content
+  
+  //*** NAVIGATION ***
+  header
+    nav.navbar.navbar-inverse.navbar-fixed-top(role='navigation')
+      .container
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#collapse')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(rel='home', href='#', title='GlobalVCG')
+            img(src='images/logo.png')
+        #collapse.collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li.active
+              a(href='#main') Home
+            li
+              a(href='#about') About
+            li
+              a(href='#contact') Contact
+
+  .pages
+    //*** MAIN PAGE ***
+    #main.page.bg-1
+      .content.container
+        .row
+          #main-text-column.col-xs-12
+            p#main-text Global Vehicle Consulting Group LLC
+        .row
+          #car-icon-column.col-xs-12
+            i#car-icon.fa.fa-car.fa-5x
+        .row
+          #down-icon-column.col-xs-12
+            i#down-icon-button.fa.fa-angle-down
+    
+    //*** ABOUT PAGE ***
+    #about.page
+      #about-container.container-fluid
+        #particle-container.content.container
+          #particles-js
+        .content.container
+          h1 Specializing in
+          .row
+            #leftList.col-md-6
+              ul
+                li Program Management
+                li Vehicle Integration
+                li Product Design, Development, & Validation
+                li New Business Development
+                li Joint Venture Formation Negotiations
+            .col-md-6
+              ul
+                li Technical/I.P. Due Diligence
+                li Technical Contracts Preparation
+                li Technical/R&D Center Formation, Operationalization & Management
+                li Vehicle Launch & Issues Remediation
+    
+    //*** CONTACT PAGE ***
+    #contact.page
+      .content.container
+        h1 Contact
+        .row
+          
+          // Left side 
+          #contactInfo.col-sm-6
+            .row
+              #contactInfo-address.col-md-12
+                h3 Iftekhar A. Ibrahim (President)
+                p 137 Streamview Dr.
+                p Troy. Michigan. 48085
+                p USA
+              #contactInfo-contact.col-md-12
+                i.fa.fa-phone
+                span
+                  | 1-248-818-8996 (US)
+                  br
+                span(style='padding-left: 36px;')
+                  | 86-15901652708 (China)
+                  br
+                i.fa.fa-envelope-o
+                span(style='padding-left: 10px;')
+                  a#emailAddress(href='saadem3000@gmail.com') iftekhar.ibrahim@gmail.com
+          
+          // Right side
+          .col-sm-6
+            h2 Send a message
+            form#contactForm(role='form')
+              .row-fluid
+                .form-group.col-sm-6
+                  label.h4(for='name') Name
+                  input#name.form-control(type='text', placeholder='Enter name', required='')
+                .form-group.col-sm-6
+                  label.h4(for='email') Email
+                  input#email.form-control(type='email', placeholder='Enter email', required='')
+                .form-group.col-sm-12
+                  label.h4(for='message') Message
+                  textarea#message.form-control(rows='5', placeholder='Enter your message', required='')
+              button#form-submit.btn.btn-success.btn-lg.pull-right(type='submit') Submit
+              #msgSubmit.h3.text-center.hidden Message Submitted!
+
+  footer
+    .content.container
+      .row
+        .col-sm-12
+          p © 2016 GlobalVCG. All Rights Reserved
+
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js')
+  script(src='https://www.google.com/recaptcha/api.js')
+  script(src='javascripts/myscript.js')
+  script(src='http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js')
+  script(src='http://threejs.org/examples/js/libs/stats.min.js')
+  script(src='javascripts/particles.js')
+
+
