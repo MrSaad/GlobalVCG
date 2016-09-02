@@ -44,7 +44,6 @@ and (max-width: 768px) {
 
 /*** navbar **/
 header .navbar {
-  padding: 5px 0;
   transition: all .5s ease-out;
 }
 
@@ -92,7 +91,7 @@ header .navbar .navbar-collapse{
 #main{
   /*background: url('../pics/car.jpg') no-repeat center top;*/
   /*background: url('../pics/car.jpg') no-repeat center top fixed;*/
-  background: url('../images/vehicles-edit.jpg') no-repeat center top;
+  background: url('../images/vehicles-reg.jpg') no-repeat center top;
   /*background-size: auto 100%;*/
   background-size: 100% auto;
   position: relative;
@@ -107,34 +106,33 @@ header .navbar .navbar-collapse{
   height: 100%;
 }
 
-#main #main-text-column{
+#main #logo-icon-column{
   position: absolute;
   top: 30%;
 }
 
-#main #car-icon-column{
+#main #logo-img{
+  height: 130px;
+}
+
+#main #logo-text-column{
   position: absolute;
-  top: 60%;
+  top: 50%;
 }
 
-#main #main-text{
-  color: white;
-  font-size: 1.3em;
-  font-weight: 500;
+#main #logo-text-img{
+  height: 100px;
 }
 
-#main #car-icon{
-  color: rgba(247, 213, 112, 0.75);
-}
 
 @media only screen 
-and (min-width: 768px){
-  #main #car-icon-column{
-    top: 55%;
+and (max-width: 768px){
+  #main #logo-text-column{
+  position: absolute;
+    top: 50%;
   }
-  #main #main-text{
-    font-size: 2em;
-    font-weight: 400;
+  #main #logo-text-img{
+    height: 70px;
   }
 }
 
@@ -152,6 +150,7 @@ and (min-width: 768px){
 .fa-angle-down:hover{
   color: rgba(255, 236, 179, 0.8);
   cursor: pointer;
+  text-shadow: 0px -4px 3px #555;
 }
 
 /** About Page ***/
