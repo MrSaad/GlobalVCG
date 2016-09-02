@@ -318,6 +318,12 @@ and (max-width: 768px) {
   border: 2px solid;
 }
 
+/* Map */
+#map{
+  width: 90%;
+  height: 235px;
+}
+
 /*** Footer ***/
 footer{
   background-color: #F9F9F9;

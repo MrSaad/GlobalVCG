@@ -81,20 +81,22 @@ block content
           
           // Right side
           #contact-right-container.col-sm-6
-            h2 Send a Message
-            form#contact-form(name='contact-form', role='form', method='post', action='/sendmessage' enctype='multipart/form-data')
-              .row-fluid
-                .form-group.col-sm-6
-                  label.h4(for='name') Name
-                  input#name.form-control(type='text', placeholder='Enter name', required='')
-                .form-group.col-sm-6
-                  label.h4(for='email') Email
-                  input#email.form-control(type='email', placeholder='Enter email', required='')
-                .form-group.col-sm-12
-                  label.h4(for='message') Message
-                  textarea#message.form-control(rows='5', placeholder='Enter your message', required='')
-              button#form-submit.btn.btn-success.btn-lg.pull-right(type='submit') Submit
-              #msgSubmit.h3.text-center.hidden Message Submitted!
+            //- h2 Send a Message
+            //- form#contact-form(name='contact-form', role='form', method='post', action='/sendmessage' enctype='multipart/form-data')
+            //-   .row-fluid
+            //-     .form-group.col-sm-6
+            //-       label.h4(for='name') Name
+            //-       input#name.form-control(type='text', placeholder='Enter name', required='')
+            //-     .form-group.col-sm-6
+            //-       label.h4(for='email') Email
+            //-       input#email.form-control(type='email', placeholder='Enter email', required='')
+            //-     .form-group.col-sm-12
+            //-       label.h4(for='message') Message
+            //-       textarea#message.form-control(rows='5', placeholder='Enter your message', required='')
+            //-   button#form-submit.btn.btn-success.btn-lg.pull-right(type='submit') Submit
+            //-   #msgSubmit.h3.text-center.hidden Message Submitted!
+            #map
+
 
   footer
     .content.container
@@ -104,7 +106,8 @@ block content
 
   script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
   script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js')
-  script(src='https://www.google.com/recaptcha/api.js')
+  //- script(src='https://www.google.com/recaptcha/api.js')
+  script(async, defer, src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBTswwRe1d8fk-KOOKfA3zsL7tNyBwmH3E&callback=initMap')
   script(src='javascripts/myscript.js')
   script(src='http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js')
   script(src='http://threejs.org/examples/js/libs/stats.min.js')
