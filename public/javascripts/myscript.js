@@ -8,12 +8,10 @@ $(function(){
 
 	//set height of main page 
 	$('.page#main').css('height', wheight);
-	$('.particles-js-canvas-el').css('height', $('#about').height());
 	//adjust height of .fullheight elements on window resize
 	$(window).resize(function() {
 		wheight = $(window).height(); //get the height of the window
 		$('.page#main').css('height', wheight); //set to window tallness  
-		$('.particles-js-canvas-el').css('height', $('#about').height());
 	});
 
 	// fix aspect ratio of background image
